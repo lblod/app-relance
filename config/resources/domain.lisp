@@ -79,7 +79,8 @@
 
 (define-resource day-of-week ()
   :class (s-prefix "schema:DayOfWeek")
-  :properties `((:name :string ,(s-prefix "schema:name")))
+  :properties `((:name :string ,(s-prefix "schema:name"))
+                (:position :number ,(s-prefix "schema:position")))
   :resource-base (s-url "http://data.relance.lblod.info/id/day-of-weeks/")
   :features '(include-uri)
   :on-path "day-of-weeks")
