@@ -29,6 +29,10 @@ services:
       - db:database
     volumes:
       - ./config/migrations:/data/migrations
+  cache:
+    image: semtech/mu-cache:2.0.1
+    links:
+      - resource:backend
   resource:
     image: semtech/mu-cl-resources:1.18.0
     links:
