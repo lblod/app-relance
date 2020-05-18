@@ -1,5 +1,6 @@
 @prefix schema: <http://schema.org/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mu: <http://mu.semte.ch/vocabularies/core/> .
 
 <http://schema.org/Friday> a schema:DayOfWeek ;
     mu:uuid "2e6bf022-4b12-40dd-bcd2-79d5d5f9f0f0" ;
