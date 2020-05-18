@@ -40,7 +40,7 @@
   :has-many `((category :via ,(s-prefix "ext:category")
                         :as "categories")
               (opening-hours-specification :via ,(s-prefix "schema:openingHoursSpecification")
-                                           :as "openingHoursSpecifications"))
+                                           :as "opening-hours-specifications"))
   :resource-base (s-url "http://data.relance.lblod.info/id/local-businesses/")
   :on-path "local-businesses")
 
