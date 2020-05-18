@@ -1,0 +1,126 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mu: <http://mu.semte.ch/vocabularies/core/> .
+@prefix ext: <http://mu.semte.ch/vocabularies/ext/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://schema.org/AnimalShelter> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "baa16b35-87e1-4f55-9789-b3f5041bccc0" ;
+    skos:prefLabel "AnimalShelter" .
+
+<http://schema.org/ArchiveOrganization> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "1a2b60fe-90cb-41b1-bd05-afe15403bc67" ;
+    skos:prefLabel "ArchiveOrganization" .
+
+<http://schema.org/AutomotiveBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "79e07672-6d03-43ba-bdbc-2588b4893bb9" ;
+    skos:prefLabel "AutomotiveBusiness" .
+
+<http://schema.org/ChildCare> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "4d64f358-8a5c-4940-9f58-a005be13bd08" ;
+    skos:prefLabel "ChildCare" .
+
+<http://schema.org/Dentist> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d171249b-7941-481a-9977-a9aa65d7348f" ;
+    skos:prefLabel "Dentist" .
+
+<http://schema.org/DryCleaningOrLaundry> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "daae1f7e-5087-40dd-9a60-826db54e20d7" ;
+    skos:prefLabel "DryCleaningOrLaundry" .
+
+<http://schema.org/EmergencyService> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "6bf83ba2-a32b-44c3-b220-494dc4f0339f" ;
+    skos:prefLabel "EmergencyService" .
+
+<http://schema.org/EmploymentAgency> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "2b282581-8835-4402-b9b0-cb7e8f445d5b" ;
+    skos:prefLabel "EmploymentAgency" .
+
+<http://schema.org/EntertainmentBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "f79b9269-6e3c-4d7d-9aaa-ea8758aecf86" ;
+    skos:prefLabel "EntertainmentBusiness" .
+
+<http://schema.org/FinancialService> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "72e27123-b359-46bd-9265-224d534f4d86" ;
+    skos:prefLabel "FinancialService" .
+
+<http://schema.org/FoodEstablishment> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c2eb0c04-a374-4890-a3cf-f4c3eea0a046" ;
+    skos:prefLabel "FoodEstablishment" .
+
+<http://schema.org/GovernmentOffice> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "822f4f2f-ef58-402d-bdde-bd9a57768a53" ;
+    skos:prefLabel "GovernmentOffice" .
+
+<http://schema.org/HealthAndBeautyBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "b5a99061-46b3-4a02-931c-35e9ae1ae6e2" ;
+    skos:prefLabel "HealthAndBeautyBusiness" .
+
+<http://schema.org/HomeAndConstructionBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d78838d9-32f8-4cf7-9202-b4e7c6f312e1" ;
+    skos:prefLabel "HomeAndConstructionBusiness" .
+
+<http://schema.org/InternetCafe> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "61b65087-6878-4220-b6f9-a5d78a456b00" ;
+    skos:prefLabel "InternetCafe" .
+
+<http://schema.org/LegalService> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "2cfec24c-6c35-477c-b870-76604b4f3dde" ;
+    skos:prefLabel "LegalService" .
+
+<http://schema.org/Library> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "6cb340c1-8ff8-45bb-902c-f4b2c0d39f61" ;
+    skos:prefLabel "Library" .
+
+<http://schema.org/LodgingBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c9450716-75a3-4bdb-877d-0384475fc487" ;
+    skos:prefLabel "LodgingBusiness" .
+
+<http://schema.org/MedicalBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "e06f5d1b-dd38-48d6-9213-bdde7406ce8e" ;
+    skos:prefLabel "MedicalBusiness" .
+
+<http://schema.org/ProfessionalService> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "0af72522-36e1-47fc-8e6e-b40c467d55dd" ;
+    skos:prefLabel "ProfessionalService" .
+
+<http://schema.org/RadioStation> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "1121ffe8-7bdc-4e99-ac01-8933b49ef2fc" ;
+    skos:prefLabel "RadioStation" .
+
+<http://schema.org/RealEstateAgent> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c574a589-43ea-418e-b614-1d40013e55e8" ;
+    skos:prefLabel "RealEstateAgent" .
+
+<http://schema.org/RecyclingCenter> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "4ff253dd-7583-4a94-a69c-1287dc660b8d" ;
+    skos:prefLabel "RecyclingCenter" .
+
+<http://schema.org/SelfStorage> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a4b07769-4bf9-4ba3-a962-7155dedcafd7" ;
+    skos:prefLabel "SelfStorage" .
+
+<http://schema.org/ShoppingCenter> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d7f3786c-f403-4c4b-9b42-bc8da2712372" ;
+    skos:prefLabel "ShoppingCenter" .
+
+<http://schema.org/SportsActivityLocation> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "cde49a67-a231-45cb-995e-3cb01be7581a" ;
+    skos:prefLabel "SportsActivityLocation" .
+
+<http://schema.org/Store> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "9915e1dd-7eb1-4498-8dda-79423c68d780" ;
+    skos:prefLabel "Store" .
+
+<http://schema.org/TelevisionStation> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "f4defbb2-3f39-40ad-96f4-8dc5e12ff4a0" ;
+    skos:prefLabel "TelevisionStation" .
+
+<http://schema.org/TouristInformationCenter> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "6a5aaa37-bdb5-4c2c-a4e7-323dc1b0279c" ;
+    skos:prefLabel "TouristInformationCenter" .
+
+<http://schema.org/TravelAgency> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a7fe1dad-1115-4bac-a46a-7d3cc4c9eb29" ;
+    skos:prefLabel "TravelAgency" .
