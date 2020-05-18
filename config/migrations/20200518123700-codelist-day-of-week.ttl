@@ -1,0 +1,42 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://schema.org/Friday> a schema:DayOfWeek ;
+    mu:uuid "2e6bf022-4b12-40dd-bcd2-79d5d5f9f0f0" ;
+    schema:position "5"^^xsd:integer ;
+    schema:name "Vrijdag" .
+
+<http://schema.org/Monday> a schema:DayOfWeek ;
+    mu:uuid "980510ad-0987-4c99-aaa9-0eb569241cd5" ;
+    schema:position "1"^^xsd:integer ;
+    schema:name "Maandag" .
+
+<http://schema.org/PublicHolidays> a schema:DayOfWeek ;
+    mu:uuid "9acaade0-bbfe-47bd-933d-bf54b9196ca0" ;
+    schema:position "8"^^xsd:integer ;
+    schema:name "Feestdag" .
+
+<http://schema.org/Saturday> a schema:DayOfWeek ;
+    mu:uuid "99d9e2bf-c941-4ddb-b167-2d681a2355a2" ;
+    schema:position "6"^^xsd:integer ;
+    schema:name "Zaterdag" .
+
+<http://schema.org/Sunday> a schema:DayOfWeek ;
+    mu:uuid "d77b6cdb-9472-4cdb-9862-448dd45812ac" ;
+    schema:position "7"^^xsd:integer ;
+    schema:name "Zondag" .
+
+<http://schema.org/Thursday> a schema:DayOfWeek ;
+    mu:uuid "50f320b6-71e0-423c-8730-7ca4b1f5724c" ;
+    schema:position "4"^^xsd:integer ;
+    schema:name "Donderdag" .
+
+<http://schema.org/Tuesday> a schema:DayOfWeek ;
+    mu:uuid "4f5e0518-e3d7-46a5-8065-81bc5189ce9e" ;
+    schema:position "2"^^xsd:integer ;
+    schema:name "Dinsdag" .
+
+<http://schema.org/Wednesday> a schema:DayOfWeek ;
+    mu:uuid "211604d5-a777-436d-b9dc-e096d4e92ef4" ;
+    schema:position "3"^^xsd:integer ;
+    schema:name "Woensdag" .
