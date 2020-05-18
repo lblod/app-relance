@@ -22,6 +22,26 @@ defmodule Dispatcher do
   #   Proxy.forward conn, path, "http://resource/themes/"
   # end
 
+  match "/local-businesses/*path" do
+    Proxy.forward conn, path, "http://cache/local-businesses/"
+  end
+
+  match "/locations/*path" do
+    Proxy.forward conn, path, "http://cache/locations/"
+  end
+
+  match "/categories/*path" do
+    Proxy.forward conn, path, "http://cache/categories/"
+  end
+
+  match "/opening-hours-specifications/*path" do
+    Proxy.forward conn, path, "http://cache/opening-hours-specifications/"
+  end
+
+  match "/day-of-weeks/*path" do
+    Proxy.forward conn, path, "http://cache/day-of-weeks/"
+  end
+
   match _ do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
   end
