@@ -33,6 +33,7 @@
   :properties `((:name :string ,(s-prefix "schema:name"))
                 (:description :string ,(s-prefix "schema:description"))
                 (:url :string ,(s-prefix "schema:url"))
+                (:image-url :string ,(s-prefix "schema:image"))
                 (:email :string ,(s-prefix "schema:email"))
                 (:telephone :string ,(s-prefix "schema:telephone")))
   :has-one `((location :via ,(s-prefix "schema:location")
