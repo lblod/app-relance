@@ -39,3 +39,5 @@ services:
     image: lblod/extract-local-businesses-from-url-service:0.0.1
     links:
       - db:database
+  adressenregister:
+    image: lblod/adressenregister-fuzzy-search-service:0.4.0
