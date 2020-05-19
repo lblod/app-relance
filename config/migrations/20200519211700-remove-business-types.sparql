@@ -1,0 +1,5 @@
+DELETE WHERE {
+  GRAPH <http://mu.semte.ch/application> {
+    ?s a <http://mu.semte.ch/vocabularies/ext/Category> ; ?p ?o .
+  }
+}
