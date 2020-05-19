@@ -40,8 +40,9 @@
   :has-many `((category :via ,(s-prefix "ext:category")
                         :as "categories")
               (opening-hours-specification :via ,(s-prefix "schema:openingHoursSpecification")
-                                           :as "openingHoursSpecifications"))
+                                           :as "opening-hours-specifications"))
   :resource-base (s-url "http://data.relance.lblod.info/id/local-businesses/")
+  :features '(include-uri)
   :on-path "local-businesses")
 
 (define-resource location ()
@@ -54,6 +55,7 @@
                               :inverse t
                               :as "local-businesses"))
   :resource-base (s-url "http://data.relance.lblod.info/id/locations/")
+  :features '(include-uri)
   :on-path "locations")
 
 (define-resource category ()
@@ -75,6 +77,7 @@
              (day-of-week :via ,(s-prefix "schema:dayOfWeek")
                           :as "day-of-week"))
   :resource-base (s-url "http://data.relance.lblod.info/id/opening-hours-specifications/")
+  :features '(include-uri)
   :on-path "opening-hours-specifications")
 
 (define-resource day-of-week ()

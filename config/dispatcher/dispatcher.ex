@@ -22,8 +22,28 @@ defmodule Dispatcher do
   #   Proxy.forward conn, path, "http://resource/themes/"
   # end
 
-  match "/fetch-businesses/*_path" do
-    Proxy.forward conn, [], "http://extractrdffromremoteservice/business"
+  match "/local-businesses/*path" do
+    Proxy.forward conn, path, "http://cache/local-businesses/"
+  end
+
+  match "/locations/*path" do
+    Proxy.forward conn, path, "http://cache/locations/"
+  end
+
+  match "/categories/*path" do
+    Proxy.forward conn, path, "http://cache/categories/"
+  end
+
+  match "/opening-hours-specifications/*path" do
+    Proxy.forward conn, path, "http://cache/opening-hours-specifications/"
+  end
+
+  match "/day-of-weeks/*path" do
+    Proxy.forward conn, path, "http://cache/day-of-weeks/"
+  end
+
+  get "/extract/*path" do
+    Proxy.forward conn, path, "http://extract-local-businesses-from-url/"
   end
 
   match _ do

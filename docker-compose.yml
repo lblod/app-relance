@@ -9,7 +9,6 @@ services:
     image: semtech/mu-dispatcher:1.1.2
     links:
       - resource:resource
-      - extractrdffromremoteservice:extractrdffromremoteservice
     volumes:
       - ./config/dispatcher:/config
   db:
@@ -26,11 +25,17 @@ services:
       - db:database
     volumes:
       - ./config/migrations:/data/migrations
+  cache:
+    image: semtech/mu-cache:2.0.1
+    links:
+      - resource:backend
   resource:
     image: semtech/mu-cl-resources:1.18.0
     links:
       - db:database
     volumes:
       - ./config/resources:/config
-  extractrdffromremoteservice:
+  extract-local-businesses-from-url:
     image: lblod/extract-local-businesses-from-url-service:0.0.1
+    links:
+      - db:database
