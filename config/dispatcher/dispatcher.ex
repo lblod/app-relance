@@ -42,6 +42,10 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://cache/day-of-weeks/"
   end
 
+  match "/nace-bel-codes/*path" do
+    Proxy.forward conn, path, "http://cache/nace-bel-codes/"
+  end
+
   get "/extract/*path" do
     Proxy.forward conn, path, "http://extract-local-businesses-from-url/"
   end
