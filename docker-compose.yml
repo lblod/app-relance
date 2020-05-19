@@ -39,7 +39,3 @@ services:
     image: lblod/extract-local-businesses-from-url-service:0.3.0
     links:
       - db:database
-  static-file:
-    image: semtech/static-file-service:0.1.0
-    volumes:
-      - ./data/sites/hamsteren-in-mechelen:/data
