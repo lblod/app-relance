@@ -1,0 +1,591 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mu: <http://mu.semte.ch/vocabularies/core/> .
+@prefix ext: <http://mu.semte.ch/vocabularies/ext/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://schema.org/AnimalShelter> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "4121b9a4-a2e2-430b-8ada-d92667932f93" ;
+    skos:prefLabel "Dierenasiel" ;
+    skos:definition """Animal shelter."""@en .
+<http://schema.org/ArchiveOrganization> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "7807f5f8-0f2d-49df-b7c0-7f1edc70a524" ;
+    skos:prefLabel "Archief" ;
+    skos:definition """An organization with archival holdings. An organization which keeps and preserves archival material and typically makes it accessible to the public."""@en .
+<http://schema.org/AutomotiveBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "de56f26a-4130-46dd-a2c8-66195624a980" ;
+    skos:prefLabel "Autoindustrie" ;
+    skos:definition """Car repair, sales, or parts."""@en .
+<http://schema.org/AutoBodyShop> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "1f9b7c39-e7a2-42de-9c7a-32ed47dfb1e6" ;
+    skos:prefLabel "Carrosserie" ;
+    skos:definition """Auto body shop."""@en .
+<http://schema.org/AutoDealer> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "525fc91e-8e5b-4e48-b5d4-5d97fac50c95" ;
+    skos:prefLabel "Autohandelaar" ;
+    skos:definition """An car dealership."""@en .
+<http://schema.org/AutoPartsStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "ffdd5f51-8ca8-4192-8333-1621f2ef2666" ;
+    skos:prefLabel "Auto onderdelen" ;
+    skos:definition """An auto parts store."""@en .
+<http://schema.org/AutoRental> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bc143aeb-62e4-4dec-b55a-220f63ddee4c" ;
+    skos:prefLabel "Autoverhuur" ;
+    skos:definition """A car rental business."""@en .
+<http://schema.org/AutoRepair> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "b3b0454b-d795-4a7f-a3d9-dbaabdca1f4a" ;
+    skos:prefLabel "Autoreparatie" ;
+    skos:definition """Car repair business."""@en .
+<http://schema.org/AutoWash> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "da73d0d1-4b4a-472f-9147-a69a538ab602" ;
+    skos:prefLabel "Carwash" ;
+    skos:definition """A car wash business."""@en .
+<http://schema.org/GasStation> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "20e41d86-b5d6-45fe-bfe2-afe691045b99" ;
+    skos:prefLabel "Benzinestation" ;
+    skos:definition """A gas station."""@en .
+<http://schema.org/MotorcycleDealer> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c9d0d1b7-3fc7-4ad0-8128-3a78b6de772f" ;
+    skos:prefLabel "Motorhandelaar" ;
+    skos:definition """A motorcycle dealer."""@en .
+<http://schema.org/MotorcycleRepair> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "6357a5b1-0447-49be-b9ce-f25ab867ae5e" ;
+    skos:prefLabel "Motorreperatie" ;
+    skos:definition """A motorcycle repair shop."""@en .
+<http://schema.org/ChildCare> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "20ff4afc-8738-4393-91f2-727c75dec73c" ;
+    skos:prefLabel "Kinderopvang" ;
+    skos:definition """A Childcare center."""@en .
+<http://schema.org/Dentist> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "b9c4e9d2-18de-400b-918e-837f51602b21" ;
+    skos:prefLabel "Tandarts" ;
+    skos:definition """A dentist."""@en .
+<http://schema.org/DryCleaningOrLaundry> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "23f9f6e3-0359-4823-89f2-84ebdfecd537" ;
+    skos:prefLabel "Droogkuis" ;
+    skos:definition """A dry-cleaning business."""@en .
+<http://schema.org/EmergencyService> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "e0a451e2-5ca4-4d3c-ad8b-8ae699022099" ;
+    skos:prefLabel "Spoedgevallendienst" ;
+    skos:definition """An emergency service, such as a fire station or ER."""@en .
+<http://schema.org/FireStation> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "7aa409d3-d3b7-4a5b-8645-5c671257bac0" ;
+    skos:prefLabel "Brandweerkazerne" ;
+    skos:definition """A fire station. With firemen."""@en .
+<http://schema.org/Hospital> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "b42c8357-e766-4a1e-ae7c-2b4630088ddf" ;
+    skos:prefLabel "Ziekenhuis" ;
+    skos:definition """A hospital."""@en .
+<http://schema.org/PoliceStation> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d4b8e53b-54ae-4008-98d3-788db64311a1" ;
+    skos:prefLabel "Politiebureau" ;
+    skos:definition """A police station."""@en .
+<http://schema.org/EmploymentAgency> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bde35a26-e9ae-477a-a55a-f377c7948ecc" ;
+    skos:prefLabel "Uitzendbureau" ;
+    skos:definition """An employment agency."""@en .
+<http://schema.org/EntertainmentBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "acd6fe9e-ad2a-42f5-afc8-7787239f483b" ;
+    skos:prefLabel "Entertainment Business" ;
+    skos:definition """A business providing entertainment."""@en .
+<http://schema.org/AdultEntertainment> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "00beb79a-ee94-4e85-8579-2f5ccee67a59" ;
+    skos:prefLabel "Entertainment voor volwassenen" ;
+    skos:definition """An adult entertainment establishment."""@en .
+<http://schema.org/AmusementPark> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "2fb1a493-6990-4004-b765-61bca294bded" ;
+    skos:prefLabel "Attractiepark" ;
+    skos:definition """An amusement park."""@en .
+<http://schema.org/ArtGallery> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "ad76f3e4-4efb-4ee0-be75-1455d7f0f563" ;
+    skos:prefLabel "Kunstgallerij" ;
+    skos:definition """An art gallery."""@en .
+<http://schema.org/Casino> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "e84e4d31-a651-450b-ba6c-bf1df9b4153d" ;
+    skos:prefLabel "Casino" ;
+    skos:definition """A casino."""@en .
+<http://schema.org/ComedyClub> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a59282b7-05a0-4c00-98ea-2bfebda7059e" ;
+    skos:prefLabel "Comedy Club" ;
+    skos:definition """A comedy club."""@en .
+<http://schema.org/MovieTheater> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "ccf83455-8010-4a2e-9b17-70b5e17ef31b" ;
+    skos:prefLabel "Bioscoop" ;
+    skos:definition """A movie theater."""@en .
+<http://schema.org/NightClub> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "34905ce3-d942-4cc7-ade2-d303ec7be60d" ;
+    skos:prefLabel "Nachtclub" ;
+    skos:definition """A nightclub or discotheque."""@en .
+<http://schema.org/FinancialService> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "16e113e8-eda9-41a4-ad97-d65aa7aff100" ;
+    skos:prefLabel "Financiële dienst" ;
+    skos:definition """Financial services business."""@en .
+<http://schema.org/AccountingService> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bcd6dce1-2f8c-4c26-acfb-4a29514fc5e3" ;
+    skos:prefLabel "Boekhoudservice" ;
+    skos:definition """Accountancy business.\n\nAs a LocalBusiness it can be described as a provider of one or more Service(s)."""@en .
+<http://schema.org/AutomatedTeller> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "dadbaa24-2e77-46ff-96c3-6fcdaa7c0739" ;
+    skos:prefLabel "Bankautomaat" ;
+    skos:definition """ATM/cash machine."""@en .
+<http://schema.org/BankOrCreditUnion> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "3e0a5054-f1e3-4ab5-8e31-5e36cc9984cb" ;
+    skos:prefLabel "Bank" ;
+    skos:definition """Bank or credit union."""@en .
+<http://schema.org/InsuranceAgency> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "7da21acd-0c73-4449-9dc4-9e75e5c55e2a" ;
+    skos:prefLabel "Verzekeringsmaatschappij" ;
+    skos:definition """An Insurance agency."""@en .
+<http://schema.org/FoodEstablishment> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d476894c-b915-4b3c-9f70-666af2b47e32" ;
+    skos:prefLabel "Voedselindustrie" ;
+    skos:definition """A food-related business."""@en .
+<http://schema.org/Bakery> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "f8b4656a-1ab0-42d7-843e-e5a1d7144222" ;
+    skos:prefLabel "Bakkerij" ;
+    skos:definition """A bakery."""@en .
+<http://schema.org/BarOrPub> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "5a2f408d-adb9-4867-83fd-af8435d48b85" ;
+    skos:prefLabel "Bar of café" ;
+    skos:definition """A bar or pub."""@en .
+<http://schema.org/Brewery> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d968b945-1dd3-43bd-8e53-19b7f59cd8d9" ;
+    skos:prefLabel "Brouwerij" ;
+    skos:definition """Brewery."""@en .
+<http://schema.org/CafeOrCoffeeShop> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "add50b94-5b17-4cc3-9746-542e2d474e90" ;
+    skos:prefLabel "Koffieshop" ;
+    skos:definition """A cafe or coffee shop."""@en .
+<http://schema.org/Distillery> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "8a0fabc2-9bdb-4797-9ec3-6ef3fb214d6a" ;
+    skos:prefLabel "Distilleerderij" ;
+    skos:definition """A distillery."""@en .
+<http://schema.org/FastFoodRestaurant> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "f3dd14ac-b839-4c64-806a-4f3a7e4e9f0c" ;
+    skos:prefLabel "Fastfood restaurant" ;
+    skos:definition """A fast-food restaurant."""@en .
+<http://schema.org/IceCreamShop> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "4727c2d1-b4a8-4525-a0b5-aac658e977f6" ;
+    skos:prefLabel "Ijssalon" ;
+    skos:definition """An ice cream shop."""@en .
+<http://schema.org/Restaurant> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "2683e4fd-4759-4db8-bf0a-4febf19e497a" ;
+    skos:prefLabel "Restaurant" ;
+    skos:definition """A restaurant."""@en .
+<http://schema.org/Winery> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a1c7c96b-8fd8-46ce-a3b0-6af7d9259053" ;
+    skos:prefLabel "Wijnmakerij" ;
+    skos:definition """A winery."""@en .
+<http://schema.org/GovernmentOffice> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bc280e9f-d0ae-4f29-a999-23851c2a99e3" ;
+    skos:prefLabel "Overheidskantoor" ;
+    skos:definition """A government office&#x2014;for example, an IRS or DMV office."""@en .
+<http://schema.org/PostOffice> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d1e406cf-3a85-4d44-befe-ae1c5f5a0805" ;
+    skos:prefLabel "Postkantoor" ;
+    skos:definition """A post office."""@en .
+<http://schema.org/HealthAndBeautyBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "043207d3-2134-44ea-b74f-861297a8a4ae" ;
+    skos:prefLabel "Gezondheidsindustrie" ;
+    skos:definition """Health and beauty."""@en .
+<http://schema.org/BeautySalon> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "2df1585b-90be-40d0-8b04-2c34274e67df" ;
+    skos:prefLabel "Schoonheidssalon" ;
+    skos:definition """Beauty salon."""@en .
+<http://schema.org/DaySpa> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "b8531362-4710-43cf-8394-2a9abfa5fc8a" ;
+    skos:prefLabel "Kuuroord" ;
+    skos:definition """A day spa."""@en .
+<http://schema.org/HairSalon> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "f171b6bf-d037-48c8-a5bb-6f24586feb55" ;
+    skos:prefLabel "Kapper" ;
+    skos:definition """A hair salon."""@en .
+<http://schema.org/HealthClub> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "12b0a058-34af-40b9-a2b1-1ae2a0172dcd" ;
+    skos:prefLabel "Gezondheidsclub" ;
+    skos:definition """A health club."""@en .
+<http://schema.org/NailSalon> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "2c4eea2d-bf68-4a76-abe6-7dbef2113086" ;
+    skos:prefLabel "Nagelsalon" ;
+    skos:definition """A nail salon."""@en .
+<http://schema.org/TattooParlor> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "63cd644b-2148-47d5-bede-8c78f2c62869" ;
+    skos:prefLabel "Tattoo shop" ;
+    skos:definition """A tattoo parlor."""@en .
+<http://schema.org/HomeAndConstructionBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "773377af-49bc-48bb-a54b-a4d2190ae2a7" ;
+    skos:prefLabel "Bouwindustrie" ;
+    skos:definition """A construction business.\n\nA HomeAndConstructionBusiness is a LocalBusiness that provides services around homes and buildings..."""@en .
+<http://schema.org/Electrician> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c3282bfa-7ec9-4c28-9b40-b0d47085a52d" ;
+    skos:prefLabel "Elektricien" ;
+    skos:definition """An electrician."""@en .
+<http://schema.org/GeneralContractor> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "636ca517-6518-4268-9c5f-b51ecb74a1be" ;
+    skos:prefLabel "Algemene aannemer" ;
+    skos:definition """A general contractor."""@en .
+<http://schema.org/HVACBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "30480610-3401-4bda-b068-c5cb96c76e32" ;
+    skos:prefLabel "Verwarming- en verluchtingsinstallaties" ;
+    skos:definition """A business that provide Heating, Ventilation and Air Conditioning services."""@en .
+<http://schema.org/HousePainter> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "fd1811a6-3a6f-40e2-a2a5-50257c7bb7c7" ;
+    skos:prefLabel "Schilder" ;
+    skos:definition """A house painting service."""@en .
+<http://schema.org/Locksmith> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "eb636459-782f-44a6-806e-0fc58f8148a2" ;
+    skos:prefLabel "Slotenmaker" ;
+    skos:definition """A locksmith."""@en .
+<http://schema.org/MovingCompany> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c633a104-e9f5-4804-a75f-90a07911583a" ;
+    skos:prefLabel "Verhuisbedrijf" ;
+    skos:definition """A moving company."""@en .
+<http://schema.org/Plumber> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "6eebd3ef-485c-43bc-ae98-8d1a2232535d" ;
+    skos:prefLabel "Loodgieter" ;
+    skos:definition """A plumbing service."""@en .
+<http://schema.org/RoofingContractor> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "492435c4-97d4-4a20-837d-491c5b37a0ee" ;
+    skos:prefLabel "Dakwerker" ;
+    skos:definition """A roofing contractor."""@en .
+<http://schema.org/InternetCafe> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "3e85b810-da9f-497b-84cc-01e6f50c69dd" ;
+    skos:prefLabel "Internet cafe" ;
+    skos:definition """An internet cafe."""@en .
+<http://schema.org/LegalService> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "1bea98ed-02b3-4b99-9183-87bcfa11617e" ;
+    skos:prefLabel "Juridische dienst" ;
+    skos:definition """A LegalService is a business that provides legally-oriented services, advice and representation, e..."""@en .
+<http://schema.org/Attorney> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "3097c3ea-6395-4552-99a8-671cd4c3d547" ;
+    skos:prefLabel "Advocaat" ;
+    skos:definition """Professional service: Attorney. \n\nThis type is deprecated - LegalService is more inclusive and less ambiguous."""@en .
+<http://schema.org/Notary> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c683eb27-3829-4469-ad96-174a9c55f37c" ;
+    skos:prefLabel "Notaris" ;
+    skos:definition """A notary."""@en .
+<http://schema.org/Library> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "11c80213-c4d9-4f26-8fa7-66c291820a8f" ;
+    skos:prefLabel "Bibliotheek" ;
+    skos:definition """A library."""@en .
+<http://schema.org/LodgingBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "f22f0dc6-6a43-4bf3-972e-7cbb74e063e3" ;
+    skos:prefLabel "Hotel/motel" ;
+    skos:definition """A lodging business, such as a motel, hotel, or inn."""@en .
+<http://schema.org/BedAndBreakfast> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a59b61d8-1560-4e0d-b447-75b0cb8c92b3" ;
+    skos:prefLabel "Bed and breakfast" ;
+    skos:definition """Bed and breakfast.\n\nSee also the dedicated document on the use of schema..."""@en .
+<http://schema.org/Campground> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a75766ff-1840-4f8e-8a73-fbc4d5cc6e24" ;
+    skos:prefLabel "Camping" ;
+    skos:definition """A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations..."""@en .
+<http://schema.org/Hostel> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "3fe81a78-569b-4855-9824-0275a24146f7" ;
+    skos:prefLabel "Herberg" ;
+    skos:definition """A hostel - cheap accommodation, often in shared dormitories.\n\nSee also the dedicated document on the use of schema..."""@en .
+<http://schema.org/Hotel> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "9b0e4d4e-6740-42a8-9115-b4347e9c29e9" ;
+    skos:prefLabel "Hotel" ;
+    skos:definition """A hotel is an establishment that provides lodging paid on a short-term basis (Source: Wikipedia, the free encyclopedia, see http://en..."""@en .
+<http://schema.org/Motel> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "22bf324f-063e-48d8-99c6-996d8fe002e2" ;
+    skos:prefLabel "Motel" ;
+    skos:definition """A motel.\n\nSee also the dedicated document on the use of schema..."""@en .
+<http://schema.org/Resort> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "9aa1b907-bd59-4678-befd-d0d3e079c279" ;
+    skos:prefLabel "Vakantieoord" ;
+    skos:definition """A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations..."""@en .
+<http://schema.org/MedicalBusiness> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "22127e50-65ab-45b0-b58e-bb51c5c07010" ;
+    skos:prefLabel "Medische industrie" ;
+    skos:definition """A particular physical or virtual business of an organization for medical purposes..."""@en .
+<http://schema.org/CommunityHealth> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "85180286-dd6b-445d-9e18-0ccf58a208e1" ;
+    skos:prefLabel "Medisch centrum" ;
+    skos:definition """A field of public health focusing on improving health characteristics of a defined population in relation with their geographical or environment areas"""@en .
+<http://schema.org/Dermatology> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "b24bbd2d-9aaa-4ba6-b1b1-198ec51a1a93" ;
+    skos:prefLabel "Dermatologie" ;
+    skos:definition """A specific branch of medical science that pertains to diagnosis and treatment of disorders of skin."""@en .
+<http://schema.org/DietNutrition> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "f91cf3f4-ef71-479c-af2a-9cdaef208b4b" ;
+    skos:prefLabel "Diëtist" ;
+    skos:definition """Dietetic and nutrition as a medical speciality."""@en .
+<http://schema.org/Emergency> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "f5ab1bd3-1d20-458f-9970-65bd620c7a7f" ;
+    skos:prefLabel "Noodgeval" ;
+    skos:definition """A specific branch of medical science that deals with the evaluation and initial treatment of medical conditions caused by trauma or sudden illness."""@en .
+<http://schema.org/Geriatric> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "2f3d20c3-f2c8-48f4-b093-ad622991707c" ;
+    skos:prefLabel "Geriater" ;
+    skos:definition """A specific branch of medical science that is concerned with the diagnosis and treatment of diseases, debilities and provision of care to the aged."""@en .
+<http://schema.org/Gynecologic> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "04b9ce92-1de4-4ea5-bf27-404cff894e0b" ;
+    skos:prefLabel "Gynaecoloog" ;
+    skos:definition """A specific branch of medical science that pertains to the health care of women, particularly in the diagnosis and treatment of disorders affecting the female reproductive system."""@en .
+<http://schema.org/MedicalClinic> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "79c7f29d-1a58-4e4d-8621-f0dbc7517842" ;
+    skos:prefLabel "Medische kliniek" ;
+    skos:definition """A facility, often associated with a hospital or medical school, that is devoted to the specific diagnosis and/or healthcare..."""@en .
+<http://schema.org/CovidTestingFacility> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "7449fa8f-88e4-4c4c-9626-8a83c44286e5" ;
+    skos:prefLabel "Covid-testcentrum" ;
+    skos:definition """A CovidTestingFacility is a MedicalClinic where testing for the COVID-19 Coronavirus\n disease is available..."""@en .
+<http://schema.org/Midwifery> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bfa9d04d-4902-475d-8aa7-3c89d2fc57c4" ;
+    skos:prefLabel "Verloskunde" ;
+    skos:definition """A nurse-like health profession that deals with pregnancy, childbirth, and the postpartum period (including care of the newborn), besides sexual and reproductive health of women throughout their lives."""@en .
+<http://schema.org/Nursing> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "2fb6a5ae-7d82-4c43-9494-e365dd6b03a9" ;
+    skos:prefLabel "Verpleging" ;
+    skos:definition """A health profession of a person formally educated and trained in the care of the sick or infirm person."""@en .
+<http://schema.org/Obstetric> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "ca8e17e7-c1a4-42ea-a1fe-a3ed6a732e44" ;
+    skos:prefLabel "Verloskundige" ;
+    skos:definition """A specific branch of medical science that specializes in the care of women during the prenatal and postnatal care and with the delivery of the child."""@en .
+<http://schema.org/Oncologic> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "4776a9dd-8e5f-4bba-a686-cf9ca8cc98c5" ;
+    skos:prefLabel "Oncologie" ;
+    skos:definition """A specific branch of medical science that deals with benign and malignant tumors, including the study of their development, diagnosis, treatment and prevention."""@en .
+<http://schema.org/Optician> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "1fdfe8b2-75c7-42b9-ba5a-c8dc6b9b9980" ;
+    skos:prefLabel "Oncoloog" ;
+    skos:definition """A store that sells reading glasses and similar devices for improving vision."""@en .
+<http://schema.org/Optometric> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "ffebc899-d1ce-4a3e-a3f4-d9191ab890bb" ;
+    skos:prefLabel "Oogarts" ;
+    skos:definition """The science or practice of testing visual acuity and prescribing corrective lenses."""@en .
+<http://schema.org/Otolaryngologic> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "e643191c-25c9-49f0-bae5-0d7490159f19" ;
+    skos:prefLabel "Oorarts" ;
+    skos:definition """A specific branch of medical science that is concerned with the ear, nose and throat and their respective disease states."""@en .
+<http://schema.org/Pediatric> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "b7fa806d-c113-43ef-ab14-9b5fedf8a633" ;
+    skos:prefLabel "Pediater" ;
+    skos:definition """A specific branch of medical science that specializes in the care of infants, children and adolescents."""@en .
+<http://schema.org/Pharmacy> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "b540d3af-a1da-425c-bc8e-e04a4fceb821" ;
+    skos:prefLabel "Apotheek" ;
+    skos:definition """A pharmacy or drugstore."""@en .
+<http://schema.org/Physician> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a9526c87-92f7-4a16-b7aa-7002e2a84287" ;
+    skos:prefLabel "Arts" ;
+    skos:definition """A doctor's office."""@en .
+<http://schema.org/Physiotherapy> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c1bdaa36-70e9-43e9-b8ed-cb447b3bc6c2" ;
+    skos:prefLabel "Fysiotherapie" ;
+    skos:definition """The practice of treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery."""@en .
+<http://schema.org/PlasticSurgery> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "3a37ac1f-6b68-4910-9d6f-66a6d3c0e78f" ;
+    skos:prefLabel "Plastische chirurgie" ;
+    skos:definition """A specific branch of medical science that pertains to therapeutic or cosmetic repair or re-formation of missing, injured or malformed tissues or body parts by manual and instrumental means."""@en .
+<http://schema.org/Podiatric> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "06ff4626-2383-4abf-86b0-fdb75bea2c96" ;
+    skos:prefLabel "Podotherapeut" ;
+    skos:definition """Podiatry is the care of the human foot, especially the diagnosis and treatment of foot disorders."""@en .
+<http://schema.org/PrimaryCare> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "4a3f9de6-c72d-4184-872c-d41b7a8d79ac" ;
+    skos:prefLabel "Eerste zorg" ;
+    skos:definition """The medical care by a physician, or other health-care professional, who is the patient's first contact with the health-care system and who may recommend a specialist if necessary."""@en .
+<http://schema.org/Psychiatric> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "49fc9d8c-11f3-4120-845a-66bdaaa7920a" ;
+    skos:prefLabel "Psychiater" ;
+    skos:definition """A specific branch of medical science that is concerned with the study, treatment, and prevention of mental illness, using both medical and psychological therapies."""@en .
+<http://schema.org/PublicHealth> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "3fd1c81e-0bf9-40c9-9d47-f4607ef4f396" ;
+    skos:prefLabel "Volksgezondheid" ;
+    skos:definition """Branch of medicine that pertains to the health services to improve and protect community health, especially epidemiology, sanitation, immunization, and preventive medicine."""@en .
+<http://schema.org/ProfessionalService> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "4af8eb74-2a2c-4a2d-8562-07c937eb7aee" ;
+    skos:prefLabel "Professionele diensten" ;
+    skos:definition """Original definition: \"provider of professional services.\"\n\nThe general ProfessionalService type for local businesses was deprecated due to confusion with Service..."""@en .
+<http://schema.org/RadioStation> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "144fe924-9bd2-43a7-ad40-eed7a5296d62" ;
+    skos:prefLabel "Radiozender" ;
+    skos:definition """A radio station."""@en .
+<http://schema.org/RealEstateAgent> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c7a95326-b5b9-4fac-84b4-ba7a4b0de263" ;
+    skos:prefLabel "Makelaar" ;
+    skos:definition """A real-estate agent."""@en .
+<http://schema.org/RecyclingCenter> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "fee7bb78-6551-4090-8b50-16729800997b" ;
+    skos:prefLabel "Recyclagecentrum" ;
+    skos:definition """A recycling center."""@en .
+<http://schema.org/SelfStorage> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "fecb6f9c-8a5c-47c0-b26c-1826bbf437fb" ;
+    skos:prefLabel "Verhuur opslag" ;
+    skos:definition """A self-storage facility."""@en .
+<http://schema.org/ShoppingCenter> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "524071af-ffe0-40e2-b528-3852047a64ec" ;
+    skos:prefLabel "Winkelcentrum" ;
+    skos:definition """A shopping center or mall."""@en .
+<http://schema.org/SportsActivityLocation> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "baec9ebc-8372-4b0e-8277-ffe4236a1046" ;
+    skos:prefLabel "Sportcentrum" ;
+    skos:definition """A sports location, such as a playing field."""@en .
+<http://schema.org/BowlingAlley> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bffd25b1-8c19-423a-a980-096bd444267c" ;
+    skos:prefLabel "Bowlingbaan" ;
+    skos:definition """A bowling alley."""@en .
+<http://schema.org/ExerciseGym> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bef7725d-4d25-4348-99b8-1f89fc224604" ;
+    skos:prefLabel "Fitness" ;
+    skos:definition """A gym."""@en .
+<http://schema.org/GolfCourse> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "6e7340fd-7a4a-4472-bad0-147ef6d342f3" ;
+    skos:prefLabel "Golfbaan" ;
+    skos:definition """A golf course."""@en .
+<http://schema.org/PublicSwimmingPool> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "9e9a8315-342f-4b38-b666-3baf61b22e25" ;
+    skos:prefLabel "Publiek zwembad" ;
+    skos:definition """A public swimming pool."""@en .
+<http://schema.org/SkiResort> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "ffc83b07-2261-460c-a1cf-491a62510c2d" ;
+    skos:prefLabel "Skiresort" ;
+    skos:definition """A ski resort."""@en .
+<http://schema.org/SportsClub> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "29847f0c-0233-437e-964f-a7b14de9ac42" ;
+    skos:prefLabel "Sportclub" ;
+    skos:definition """A sports club."""@en .
+<http://schema.org/StadiumOrArena> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "61c83492-ab7e-4695-bfda-db4723dd98fc" ;
+    skos:prefLabel "Stadium of arena" ;
+    skos:definition """A stadium."""@en .
+<http://schema.org/TennisComplex> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d4b579a4-0d45-4532-8298-6ba63479770a" ;
+    skos:prefLabel "Tenniscomplex" ;
+    skos:definition """A tennis complex."""@en .
+<http://schema.org/Store> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "9e56f20e-0741-4097-900b-9c6f04b10105" ;
+    skos:prefLabel "Winkel" ;
+    skos:definition """A retail good store."""@en .
+<http://schema.org/BikeStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "59eed990-7b1e-4951-b411-21fa6a488756" ;
+    skos:prefLabel "Fietsenwinkel" ;
+    skos:definition """A bike store."""@en .
+<http://schema.org/BookStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "c02eff35-82d4-4fca-87eb-1f871dc49fbc" ;
+    skos:prefLabel "Boekenwinkel" ;
+    skos:definition """A bookstore."""@en .
+<http://schema.org/ClothingStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "569f4158-147c-4a9f-983a-780ed3eb1292" ;
+    skos:prefLabel "Kledingwinkel" ;
+    skos:definition """A clothing store."""@en .
+<http://schema.org/ComputerStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bce49537-4708-4ba8-b5bc-ef224777172f" ;
+    skos:prefLabel "Computerwinkel" ;
+    skos:definition """A computer store."""@en .
+<http://schema.org/ConvenienceStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "b8bd0057-f627-4356-9b81-d17f496191b4" ;
+    skos:prefLabel "Nachtwinkel" ;
+    skos:definition """A convenience store."""@en .
+<http://schema.org/DepartmentStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "20fa9d32-e279-4594-b317-a9012d2dd36f" ;
+    skos:prefLabel "Warenhuis" ;
+    skos:definition """A department store."""@en .
+<http://schema.org/ElectronicsStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "e7b82d85-62e8-4b23-927a-10ac13b0be79" ;
+    skos:prefLabel "Elektronicazaak" ;
+    skos:definition """An electronics store."""@en .
+<http://schema.org/Florist> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "cab6a892-578f-4169-a742-2c22a3682817" ;
+    skos:prefLabel "Bloemist" ;
+    skos:definition """A florist."""@en .
+<http://schema.org/FurnitureStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "0d3799bb-6918-4538-8d0a-f19153675b7d" ;
+    skos:prefLabel "Meubelwinkel" ;
+    skos:definition """A furniture store."""@en .
+<http://schema.org/GardenStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "66097c19-cbb2-4a27-afdf-bb8475505b43" ;
+    skos:prefLabel "Tuincentrum" ;
+    skos:definition """A garden store."""@en .
+<http://schema.org/GroceryStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "9f486afc-2131-497f-a371-9ba6dc7c2a5a" ;
+    skos:prefLabel "Supermarkt" ;
+    skos:definition """A grocery store."""@en .
+<http://schema.org/HardwareStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "76a6559a-75a3-49ff-bd91-176466aef3d0" ;
+    skos:prefLabel "Doe-het-zelfzaak" ;
+    skos:definition """A hardware store."""@en .
+<http://schema.org/HobbyShop> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a3abcb56-fdd4-4921-9e26-b75fae20cfc7" ;
+    skos:prefLabel "Hobbywinkel" ;
+    skos:definition """A store that sells materials useful or necessary for various hobbies."""@en .
+<http://schema.org/HomeGoodsStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a1421950-5286-4aa4-bfc2-177f09ce42ea" ;
+    skos:prefLabel "Interieurwinkel" ;
+    skos:definition """A home goods store."""@en .
+<http://schema.org/JewelryStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "a2ba1477-845d-4f86-8f86-97b66691a886" ;
+    skos:prefLabel "Juwelier" ;
+    skos:definition """A jewelry store."""@en .
+<http://schema.org/LiquorStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "9dfd1221-a257-4159-b7e6-122906da87e0" ;
+    skos:prefLabel "Slijterij" ;
+    skos:definition """A shop that sells alcoholic drinks such as wine, beer, whisky and other spirits."""@en .
+<http://schema.org/MensClothingStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "46c68d09-e713-4358-a446-049741b1221d" ;
+    skos:prefLabel "Herenkledingwinkel" ;
+    skos:definition """A men's clothing store."""@en .
+<http://schema.org/MobilePhoneStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "94b78dce-4979-41ed-86e4-508ac6794dfc" ;
+    skos:prefLabel "Telefoonwinkel" ;
+    skos:definition """A store that sells mobile phones and related accessories."""@en .
+<http://schema.org/MovieRentalStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "ba508a2e-3180-428a-be84-910349fc706d" ;
+    skos:prefLabel "Filmverhuur" ;
+    skos:definition """A movie rental store."""@en .
+<http://schema.org/MusicStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bd683d21-a9be-45c3-805c-84161844c3d4" ;
+    skos:prefLabel "Muziekwinkel" ;
+    skos:definition """A music store."""@en .
+<http://schema.org/OfficeEquipmentStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "76d82a65-abc1-4668-ac5a-a3f725d5a0bd" ;
+    skos:prefLabel "Kantoormeubilair" ;
+    skos:definition """An office equipment store."""@en .
+<http://schema.org/OutletStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d45f2365-4958-4d1f-af30-9d706276090d" ;
+    skos:prefLabel "Outlet" ;
+    skos:definition """An outlet store."""@en .
+<http://schema.org/PawnShop> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "f1af8ee4-6de6-414d-9ed0-e3024f639e89" ;
+    skos:prefLabel "Pandjeshuis" ;
+    skos:definition """A shop that will buy, or lend money against the security of, personal possessions."""@en .
+<http://schema.org/PetStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "9add367d-7ada-4330-ad5e-770b275d53a3" ;
+    skos:prefLabel "Dierenwinkel" ;
+    skos:definition """A pet store."""@en .
+<http://schema.org/ShoeStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "d36642db-7693-4f6e-ad6f-ccb5cf910588" ;
+    skos:prefLabel "Schoenenwinkel" ;
+    skos:definition """A shoe store."""@en .
+<http://schema.org/SportingGoodsStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "999fd39b-864f-4f6e-be3d-d4c0c5ad5a59" ;
+    skos:prefLabel "Sportwinkel" ;
+    skos:definition """A sporting goods store."""@en .
+<http://schema.org/TireShop> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "55fc285a-9502-4d16-8415-f8235a27225a" ;
+    skos:prefLabel "Bandencentrale" ;
+    skos:definition """A tire shop."""@en .
+<http://schema.org/ToyStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "bb111c92-92fa-4cfc-8c6d-ff55e23521ca" ;
+    skos:prefLabel "Speelgoedwinkel" ;
+    skos:definition """A toy store."""@en .
+<http://schema.org/WholesaleStore> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "5411d98a-e593-4607-bc4e-29e795e6c9ed" ;
+    skos:prefLabel "Groothandel" ;
+    skos:definition """A wholesale store."""@en .
+<http://schema.org/TelevisionStation> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "01ec100c-995d-40d2-9f17-4828bd90ee40" ;
+    skos:prefLabel "Televisiestation" ;
+    skos:definition """A television station."""@en .
+<http://schema.org/TouristInformationCenter> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "0d6c6b68-9965-4723-8797-16bb5a75b1ce" ;
+    skos:prefLabel "Toeristische dienst" ;
+    skos:definition """A tourist information center."""@en .
+<http://schema.org/TravelAgency> a ext:Category, skos:Concept, rdfs:Class ;
+    mu:uuid "000a5e50-84bd-4a2e-9e10-2f7044632c43" ;
+    skos:prefLabel "Reisbureau" ;
+    skos:definition """A travel agency."""@en .
