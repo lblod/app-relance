@@ -35,3 +35,7 @@ services:
       - db:database
     volumes:
       - ./config/resources:/config
+  extract-local-businesses-from-url:
+    image: lblod/extract-local-businesses-from-url-service
+    links:
+      - db:database

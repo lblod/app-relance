@@ -42,6 +42,10 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://cache/day-of-weeks/"
   end
 
+  get "/extract/*path" do
+    Proxy.forward conn, path, "http://extract-local-businesses-from-url/"
+  end
+
   match _ do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
   end
