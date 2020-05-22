@@ -35,3 +35,7 @@
 (add-prefix "schema" "http://schema.org/")
 (add-prefix "skos" "http://www.w3.org/2004/02/skos/core#")
 (add-prefix "nacebel" "http://data.gift/vocabularies/nace-bel/")
+(add-prefix "nfo" "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#")
+(add-prefix "nie" "http://www.semanticdesktop.org/ontologies/2007/01/19/nie#")
+(add-prefix "dbpedia" "http://dbpedia.org/ontology/")
+(add-prefix "dct" "http://purl.org/dc/terms/")

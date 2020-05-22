@@ -50,6 +50,14 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://extract-local-businesses-from-url/"
   end
 
+  match "/images/*path" do
+    Proxy.forward conn, path, "http://imageservice/image/"
+  end
+
+  match "/files/*path" do
+    Proxy.forward conn, path, "http://file/files/"
+  end
+
   match _ do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
   end
