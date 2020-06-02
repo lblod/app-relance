@@ -6,7 +6,7 @@ services:
     links:
       - dispatcher:dispatcher
   dispatcher:
-    image: semtech/mu-dispatcher:2.0.0-beta.2
+    image: semtech/mu-dispatcher:latest
     links:
       - resource:resource
     volumes:

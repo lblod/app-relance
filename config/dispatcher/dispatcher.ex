@@ -70,6 +70,4 @@ defmodule Dispatcher do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
   end
 
-  last_match
-
 end
