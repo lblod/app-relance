@@ -20,7 +20,7 @@ services:
       - ./data/db:/data
       - ./config/virtuoso/virtuoso.ini:/data/virtuoso.ini
   fastboot:
-    image: lblod/frontend-relance:fastboot-feature-fastboot
+    image: lblod/frontend-relance:latest-fastboot
     links:
       - identifier:backend
   migrations:
