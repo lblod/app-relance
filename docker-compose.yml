@@ -47,7 +47,7 @@ services:
       - ./config/resources:/config
     restart: always
   extract-local-businesses-from-url:
-    image: lblod/extract-local-businesses-from-url-service:0.3.0
+    image: lblod/extract-local-businesses-from-url-service:0.3.1
     links:
       - db:database
     restart: always

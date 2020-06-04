@@ -1,5 +1,12 @@
 (in-package :mu-cl-resources)
 
+(defparameter *supply-cache-headers-p* t
+  "when non-nil, cache headers are supplied.  this works together with mu-cache.")
+(setf *cache-model-properties-p* t)
+(defparameter *include-count-in-paginated-responses* t
+  "when non-nil, all paginated listings will contain the number
+   of responses in the result object's meta.")
+
 ;;;;
 ;; NOTE
 ;; docker-compose stop; docker-compose rm; docker-compose up
@@ -35,7 +42,9 @@
                 (:url :string ,(s-prefix "schema:url"))
                 (:image-url :string ,(s-prefix "schema:image"))
                 (:email :string ,(s-prefix "schema:email"))
-                (:telephone :string ,(s-prefix "schema:telephone")))
+                (:telephone :string ,(s-prefix "schema:telephone"))
+                (:created :datetime ,(s-prefix "dct:created"))
+                (:modified :datetime ,(s-prefix "dct:modified")))
   :has-one `((location :via ,(s-prefix "schema:location")
                        :as "location"))
   :has-many `((category :via ,(s-prefix "ext:category")
