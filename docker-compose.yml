@@ -23,7 +23,7 @@ services:
       - ./config/virtuoso/virtuoso.ini:/data/virtuoso.ini
     restart: always
   fastboot:
-    image: lblod/frontend-relance:0.3.1-fastboot
+    image: lblod/frontend-relance:0.3.2-fastboot
     links:
       - identifier:backend
     restart: always
